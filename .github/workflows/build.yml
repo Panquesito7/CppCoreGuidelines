@@ -2,7 +2,9 @@ name: build
 on: [push, pull_request]
 
 env:
-  SPELLCHECKER_PREFER_HUNSPELL: true
+   apt:
+    hunspell
+    SPELLCHECKER_PREFER_HUNSPELL = true
 
 jobs:
   build:
