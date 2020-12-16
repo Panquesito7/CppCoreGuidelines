@@ -13,9 +13,9 @@ jobs:
      
       - name: Install Hunspell
         run: |
-           apt-get update
-           apt-get install python-dev 
-           apt-get install libhunspell-dev
+           sudo apt-get update
+           sudo apt-get install python-dev 
+           sudo apt-get install libhunspell-dev
            pip install hunspell
 
       - name: Run cd scripts; make -k
