@@ -10,6 +10,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
+     
+      - name: Install Hunspell
+        run: |
+           apt-get update
+           apt-get install python-dev 
+           apt-get install libhunspell-dev
+           pip install hunspell
 
       - name: Run cd scripts; make -k
         run: cd scripts; make -k
